@@ -1,5 +1,12 @@
-const addToFrontOrBack = () => {
+const addToFrontOrBack = (arr, value, isFront) => {
+  if (isFront) {
+    arr.unshift(value)
+  } else {
+    arr.push(value)
+  }
+  return arr;
 };
+//console.log(addToFrontOrBack([0, 1, 2, 3], 4, true))
 
 const reverseString = () => {
 };
