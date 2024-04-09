@@ -11,10 +11,14 @@ const addToFrontOrBack = (arr, value, isFront) => {
 const reverseString = (str) => {
   return str.split("").reverse().join("")
 };
-console.log(reverseString("hello"))
+//console.log(reverseString("hello"))
 
-const newArrayFullOf = () => {
+const newArrayFullOf = (value, numOfValue) => {
+  return Array(numOfValue).fill(value);
+
 };
+const arr = newArrayFullOf(1, 5)
+//console.log(arr)
 
 const insertIntoMiddle = () => {
 };
