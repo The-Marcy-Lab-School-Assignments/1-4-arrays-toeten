@@ -8,8 +8,10 @@ const addToFrontOrBack = (arr, value, isFront) => {
 };
 //console.log(addToFrontOrBack([0, 1, 2, 3], 4, true))
 
-const reverseString = () => {
+const reverseString = (str) => {
+  return str.split("").reverse().join("")
 };
+console.log(reverseString("hello"))
 
 const newArrayFullOf = () => {
 };
