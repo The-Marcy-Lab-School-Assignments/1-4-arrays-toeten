@@ -34,10 +34,17 @@ const deleteFromMiddle = (arr) => {
   return arr;
 };
 const arr6 = [3, 4, 5, 6]
-console.log(deleteFromMiddle(arr6))
+//console.log(deleteFromMiddle(arr6))
 
-const isRightIndex = () => {
+const isRightIndex = (arr, value, index) => {
+  if (arr.includes(value, index)) {
+    return true
+  } else {
+    return false
+  }
 };
+const arr7 = [1, 2, 3, 4]
+console.log(isRightIndex(arr7, 6, 0))
 
 const roundAllNumsDown = () => {
 };
