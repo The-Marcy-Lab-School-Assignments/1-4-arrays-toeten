@@ -44,7 +44,7 @@ const isRightIndex = (arr, value, index) => {
   }
 };
 const arr7 = [1, 2, 3, 4]
-console.log(isRightIndex(arr7, 6, 0))
+//console.log(isRightIndex(arr7, 6, 0))
 
 const roundAllNumsDown = (arr) => {
   let roundedDown = arr.map(nums => Math.floor(nums))
@@ -53,8 +53,18 @@ const roundAllNumsDown = (arr) => {
 const arrDown = [1.1, 2.2, 3.3];
 console.log(roundAllNumsDown(arrDown))
 
-const getAllYCoordinates = () => {
+const getAllYCoordinates = (arrOfCords) => {
+  let allYs = arrOfCords.map(coord => coord[1])
+  return allYs;
 };
+let arr10 = [[1, 2], [3, 4], [5, 6]]
+console.log(getAllYCoordinates(arr10))
+
+//const getAllYCoordinates = (arrOfCoords) => {
+//  return arrOfCoords.map(coord => coord[1]);
+//};
+
+
 
 module.exports = {
   addToFrontOrBack,
