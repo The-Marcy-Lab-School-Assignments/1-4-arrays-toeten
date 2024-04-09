@@ -1,10 +1,9 @@
-const uppercaseAll = (word1, word2, word3) => {
+const uppercaseAll = (...words) => {
   return [
-    word1.toUpperCase(),
-    word2.toUpperCase(),
-    word3.toUpperCase(),
+    ...words.map(word => word.toUpperCase()),
   ];
 };
+console.log(uppercaseAll("hello", "whats up", "whaaat", "nice"))
 
 const destructureCoordinates = (coordinates) => {
   const x = coordinates[0];
