@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 const clearArr = (arr) => {
-  arr = [];
+  return arr.splice([]);
 };
 
 const getFirstItem = (array) => {

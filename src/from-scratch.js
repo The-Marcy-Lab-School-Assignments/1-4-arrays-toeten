@@ -57,11 +57,11 @@ const getAllYCoordinates = (arrOfCords) => {
   let allYs = arrOfCords.map(coord => coord[1])
   return allYs;
 };
-let arr10 = [[1, 2], [3, 4], [5, 6]]
+const arr10 = [[1, 2], [3, 4], [5, 6]]
 console.log(getAllYCoordinates(arr10))
 
 //const getAllYCoordinates = (arrOfCoords) => {
-//  return arrOfCoords.map(coord => coord[1]);
+//  return arrOfCoords.map(coord => coord[1]); also works
 //};
 
 
