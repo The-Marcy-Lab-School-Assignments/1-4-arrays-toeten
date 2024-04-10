@@ -17,4 +17,20 @@ const getAllYCoordinates = (arrOfCords) => {
     return allYs;
 };
 let arr10 = [[1, 2], [3, 4], [5, 6]]
-console.log(getAllYCoordinates(arr10))
+//console.log(getAllYCoordinates(arr10))
+
+
+
+let name = "mike";
+const changeName = (nameToChange) => {
+    nameToChange = "tom";
+};
+changeName(name);
+console.log(name);
+
+const favoriteLocations = ["New York City", "Jersey City"];
+const addBostonToFavorites = (locations) => {
+    locations.unshift("Boston");
+};
+addBostonToFavorites(favoriteLocations);
+console.log(favoriteLocations);
