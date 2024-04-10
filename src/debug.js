@@ -4,8 +4,9 @@ const clearArr = (arr) => {
 };
 
 const getFirstItem = (array) => {
-  return array.shift();
+  return array[0];
 };
+console.log(getFirstItem([1, 2, 3]))
 
 module.exports = {
   clearArr,
