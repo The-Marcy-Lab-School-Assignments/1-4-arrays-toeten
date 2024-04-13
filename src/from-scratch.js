@@ -1,3 +1,4 @@
+/** FEEDBACK: Because conditional statement naturally will evaluate truthy or falsy, you do not need to set it equal to true! */
 const addToFrontOrBack = (arr, value, isFront) => {
   if (isFront) {
     arr.unshift(value)
@@ -35,7 +36,7 @@ const deleteFromMiddle = (arr) => {
 };
 const arr6 = [3, 4, 5, 6]
 //console.log(deleteFromMiddle(arr6))
-
+/** FEEDBACK: Because we have the index at our disposal, we can simply access through the index rather than using .includes! */
 const isRightIndex = (arr, value, index) => {
   if (arr.includes(value, index)) {
     return true

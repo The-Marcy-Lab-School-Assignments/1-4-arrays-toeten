@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job getting all test cases to pass! */
 /* eslint-disable no-param-reassign */
 const clearArr = (arr) => {
   return arr.splice([]);
